@@ -22,7 +22,7 @@ public class TileManager {
 	    mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
 		
 		getTileImage();
-		loadMap("/maps/mapGPT.txt");
+		loadMap("/maps/mapGPT2.1.txt");
 		
 	}
 	public void getTileImage ()  {
