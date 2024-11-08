@@ -62,7 +62,7 @@ public class CollisionChecker {
 
 	public int checkObject(Entity entity, Boolean player) {
 		
-		int index = 999;
+		int index = 998;
 		
 		for(int i = 0; i < gp.obj.length; i++ ) {
 			if(gp.obj[i] != null) {
