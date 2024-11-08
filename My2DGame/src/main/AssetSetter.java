@@ -3,6 +3,7 @@ package main;
 import object.OBJ_Chest;
 import object.OBJ_Door;
 import object.OBJ_Key;
+import object.OBJ_Redbull;
 
 public class AssetSetter {
 	
@@ -39,6 +40,10 @@ public class AssetSetter {
 		gp.obj[6] = new OBJ_Chest();
 		gp.obj[6].worldX = 8 *gp.tileSize;
 		gp.obj[6].worldY = 11 *gp.tileSize;
+		
+		gp.obj[7] = new OBJ_Redbull();
+		gp.obj[7].worldX = 38 *gp.tileSize;
+		gp.obj[7].worldY = 33 *gp.tileSize;
 		
 	}
 }
