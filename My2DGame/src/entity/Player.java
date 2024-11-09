@@ -11,6 +11,7 @@ import javax.imageio.ImageIO;
 
 import main.GamePanel;
 import main.KeyHandler;
+import main.Sound;
 
 public class Player extends Entity{
 	
@@ -69,6 +70,7 @@ public class Player extends Entity{
 		
 		if(keyH.upPressed == true) {
 			direction = "up";
+
 		
 		}
 		else if(keyH.downPressed == true) {
@@ -135,19 +137,27 @@ public class Player extends Entity{
 			case "Key":
 				hasKey++;
 				gp.obj[i] = null;
+				gp.playSE(2);
 				System.out.println("Key:"+hasKey);
 				break;
 			case "Door":
 				if(hasKey > 0) {
+					gp.playSE(3);
 					gp.obj[i] = null;
 					hasKey--;
 				}
+				
 				break;
 			case "Redbull":
 				gp.obj[i] = null;
-				speed =7;
-				
-				break;
+				speed += 2;
+			    gp.playSE(4);
+			    break;
+			    
+			case "Chest":
+				gp.obj[i] = null;
+			    gp.stopMusic();
+			    break;
 			}
 		}
 		

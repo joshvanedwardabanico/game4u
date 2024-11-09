@@ -45,5 +45,13 @@ public class AssetSetter {
 		gp.obj[7].worldX = 38 *gp.tileSize;
 		gp.obj[7].worldY = 33 *gp.tileSize;
 		
+		gp.obj[8] = new OBJ_Redbull();
+		gp.obj[8].worldX = 25 *gp.tileSize;
+		gp.obj[8].worldY = 28 *gp.tileSize;
+
+		//gp.obj[9] = new OBJ_Redbull();
+		//gp.obj[9].worldX = 24 *gp.tileSize;
+		//gp.obj[9].worldY = 27 *gp.tileSize;
+
 	}
 }
